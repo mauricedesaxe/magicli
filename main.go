@@ -84,6 +84,8 @@ func main() {
 		}
 	}
 
+	log.Println("Found", len(emails), "emails")
+
 	// Save emails to a CSV file
 	file, err := os.Create("emails.csv")
 	if err != nil {
